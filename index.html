@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Printer Support - Get help with HP Printer products</title>
+    <meta name="description" content="Get help and support for all HP Printer products including HP Printer, Office, HP Printer 365, and more.">
+    <meta name="keywords" content="HP Printer support, HP Printer help, Office help, HP Printer support, troubleshooting">
+    <link rel="icon" type="image/x-icon" href="">
+    <style>
+           /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #232f3e;
+            padding: 15px 0;
+        }
+
+        .logo {
+            max-width: 120px;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            color: #232f3e;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            color: #555;
+        }
+
+        /* Call button styles */
+        .call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff9900;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 999;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .call-button:hover {
+            transform: scale(1.1);
+            background-color: #e88a00;
+        }
+
+        .call-button svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        .hero-call-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff9900;
+            color: #fff;
+            border-radius: 50px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .hero-call-button:hover {
+            background-color: #e88a00;
+        }
+
+        .hero-call-button svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        .hero-call-button span {
+            font-weight: bold;
+        }
+
+        /* Contact options section */
+        .contact-options {
+            padding: 40px 0;
+        }
+
+        .contact-options h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #232f3e;
+            font-size: 1.8rem;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .option-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .option-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 15px;
+        }
+
+        .option-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #232f3e;
+        }
+
+        .option-card p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff9900;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e88a00;
+        }
+
+        /* Section dividers */
+        .section-divider {
+            height: 2px;
+            background-color: #ddd;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .quick-call {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .quick-call h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #232f3e;
+        }
+
+        .quick-call-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #ff9900;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .quick-call-btn:hover {
+            background-color: #e88a00;
+        }
+
+        .quick-call-btn svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        /* Contact form section */
+        .contact-form {
+            background-color: #fff;
+            padding: 40px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #232f3e;
+            font-size: 1.8rem;
+        }
+
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #ff9900;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover {
+            background-color: #e88a00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #ddd;
+            margin: 5px 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #ff9900;
+        }
+
+        .footer-call {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .footer-call a {
+            display: inline-flex;
+            align-items: center;
+            background-color: #ff9900;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-call a:hover {
+            background-color: #e88a00;
+        }
+
+        .footer-call svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        .copyright {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .option-card {
+                margin-bottom: 20px;
+            }
+
+            .hero-call-button {
+                top: 10px;
+                right: 10px;
+                padding: 8px 12px;
+            }
+
+            .hero-call-button svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .hero-call-button span {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 30px 0;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+                margin-top: 20px;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .option-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .option-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .submit-btn {
+                width: 100%;
+            }
+
+            .quick-call-btn {
+                padding: 10px 15px;
+                font-size: 1rem;
+            }
+
+            .hero-call-button {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 15px auto 0;
+                display: inline-flex;
+            }
+
+            .call-button {
+                bottom: 15px;
+                right: 15px;
+                width: 50px;
+                height: 50px;
+            }
+
+            .call-button svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        /* Phone icon styles */
+        .icon-phone {
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 15px;
+            display: block;
+        }
+
+        .icon-email {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 15px;
+        }
+
+        .icon-location {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 15px;
+        }
+
+        .option-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 30px 20px;
+        }
+
+        .footer-phone {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        .footer-phone:hover {
+            color: #ff9900;
+        }
+        :root {
+            --primary: #0067b8;
+            --primary-hover: #005da6;
+            --primary-light: #e6f2ff;
+            --secondary: #f25022;
+            --secondary-hover: #d83b01;
+            --accent: #ffb900;
+            --dark-gray: #333333;
+            --gray: #767676;
+            --light-gray: #f2f2f2;
+            --lighter-gray: #f8f8f8;
+            --border-gray: #e6e6e6;
+            --white: #ffffff;
+            --black: #000000;
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --border-radius: 2px;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--dark-gray);
+            background-color: var(--white);
+        }
+
+        /* Header */
+        .header {
+            border-bottom: 1px solid var(--border-gray);
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            height: 54px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .HPPrinter-logo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1px;
+            width: 23px;
+            height: 23px;
+            margin-right: 8px;
+        }
+
+        .logo-square {
+            width: 11px;
+            height: 11px;
+        }
+
+        .logo-square {<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Avast_2019_logo.png">; }
+
+
+        .logo-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-gray);
+        }
+
+        .support-text {
+            font-weight: 400;
+            margin-left: 5px;
+            color: var(--gray);
+        }
+
+        .header-nav {
+            margin-left: 80px;
+            display: flex;
+        }
+
+        .header-nav a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 13px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            height: 54px;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .header-nav a:hover,
+        .header-nav a.active {
+            border-bottom: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .header-actions {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: var(--lighter-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 2px;
+            padding: 5px 10px;
+            margin-right: 20px;
+        }
+
+        .search-bar input {
+            border: none;
+            background: transparent;
+            padding: 5px;
+            font-size: 13px;
+            width: 200px;
+            outline: none;
+        }
+
+        .search-bar button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: var(--gray);
+        }
+
+        .sign-in-button {
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .sign-in-button:hover {
+            background-color: var(--primary-light);
+        }
+
+        .call-now-button {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 8px 15px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            margin-left: 15px;
+            transition: all 0.2s ease;
+        }
+
+        .call-now-button:hover {
+            background: var(--secondary-hover);
+        }
+
+        /* Content Sections */
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--primary);
+            color: var(--white);
+            padding: 60px 0;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            color: var(--white);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .primary-button {
+            background: var(--white);
+            color: var(--primary);
+            padding: 10px 20px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 17px;
+            font-weight: 800;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.2s ease;
+        }
+
+        .primary-button:hover {
+            background: var(--light-gray);
+        }
+
+        .secondary-button {
+            background: transparent;
+            color: var(--white);
+            padding: 10px 20px;
+            border: 1px solid var(--white);
+            border-radius: var(--border-radius);
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.2s ease;
+        }
+
+        .secondary-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Product Hero Sections */
+        .product-hero {
+            background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .product-hero.HPPrinter {
+            background: linear-gradient(135deg, #0078d4, #106ebe);
+        }
+
+        .product-hero.office {
+            background: linear-gradient(135deg, #d83b01, #c13219);
+        }
+
+        .product-hero.m365 {
+            background: linear-gradient(135deg, #772ce8, #5a2fc2);
+        }
+
+        .product-hero.surface {
+            background: linear-gradient(135deg, #0078d4, #106ebe);
+        }
+
+        .product-hero.xbox {
+            background: linear-gradient(135deg, #107c10, #0e6e0e);
+        }
+
+        .product-hero h1 {
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .product-hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Quick Help Section */
+        .quick-help {
+            background: var(--white);
+            padding: 60px 0;
+        }
+
+        .quick-help-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: var(--dark-gray);
+            text-align: center;
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .quick-link {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .quick-link:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary);
+        }
+
+        .quick-link-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .quick-link-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .quick-link ul {
+            list-style: none;
+            margin-left: 5px;
+        }
+
+        .quick-link ul li {
+            margin-bottom: 12px;
+        }
+
+        .quick-link ul li a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        .quick-link ul li a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .quick-link ul li a::before {
+            content: "→";
+            color: var(--primary);
+            font-weight: bold;
+            display: inline-block;
+            width: 20px;
+            margin-left: -20px;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary);
+        }
+
+        .feature-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+
+        .feature-description {
+            font-size: 15px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .feature-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .feature-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Emergency Banner */
+        .emergency-banner {
+            background: var(--accent);
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .emergency-banner-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .emergency-text {
+            font-weight: 600;
+            color: var(--black);
+        }
+
+        .emergency-button {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 8px 15px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+
+        .emergency-button:hover {
+            background: var(--secondary-hover);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-gray);
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444444;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .footer-bottom-links a {
+            color: #cccccc;
+            text-decoration: none;
+        }
+
+        .footer-bottom-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sticky Help Button */
+        .sticky-help {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+        }
+
+        .help-button {
+			background: #17F126;
+/*            background: var(--secondary);*/
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .help-button:hover {
+			background: #F8CC0F;
+/*            background: var(--secondary-hover);*/
+            transform: scale(1.1);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header-nav {
+                display: none;
+            }
+
+            .search-bar {
+                display: none;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-content {
+                order: 1;
+            }
+
+            .hero-image {
+                order: 0;
+                margin-bottom: 20px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .product-hero h1 {
+                font-size: 32px;
+            }
+
+            .quick-links {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .footer-bottom-links {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 16px;
+            }
+
+            .support-text {
+                display: none;
+            }
+
+            .sign-in-button {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+
+            .call-now-button {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 40px 0;
+            }
+
+            .hero-content h1 {
+                font-size: 24px;
+            }
+
+            .product-hero {
+                padding: 60px 0;
+            }
+
+            .product-hero h1 {
+                font-size: 28px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sticky-help {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .help-button {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+
+        /* Loading animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .quick-link:hover .quick-link-icon {
+            animation: pulse 1s ease-in-out;
+        }
+
+        .feature-card:hover .feature-icon {
+            animation: pulse 1s ease-in-out;
+        }
+        /* Hotline mobile chỉ hiện ở mobile */
+.hotline-mobile {
+  display: none;
+}
+@media (max-width: 900px) {
+  .hotline-mobile {
+    display: block;
+    background: #F0B90B;
+    color: #181A20;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 0 8px 0;
+    font-size: 18px;
+    position: relative;
+    z-index: 99;
+    letter-spacing: 0.2px;
+  }
+  .hotline-mobile a {
+    color: #181A20;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 17px;
+  }
+  .hotline-mobile-icon {
+    font-size: 23px;
+    margin-right: 4px;
+    animation: shakephone 1.2s infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+/* b. Animation rung cho icon điện thoại */
+@keyframes shakephone {
+  0% { transform: rotate(-18deg);}
+  10% { transform: rotate(12deg);}
+  20% { transform: rotate(-8deg);}
+  30% { transform: rotate(8deg);}
+  40% { transform: rotate(-4deg);}
+  50% { transform: rotate(4deg);}
+  60% { transform: rotate(0deg);}
+  100% { transform: rotate(0deg);}
+}
+
+/* b. Animation pulse cho icon trong nút Call Now (nổi góc dưới + banner) */
+.call-now-btn .phone-icon,
+
+.banner-call-btn .phone-icon {
+  display: inline-block;
+  animation: phone-pulse 1.3s infinite;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+@keyframes phone-pulse {
+  0% { color: #B38700; transform: scale(1);}
+  50% { color: #F0B90B; transform: scale(1.18);}
+  100% { color: #B38700; transform: scale(1);}
+}
+
+    </style>
+</head>
+<body>
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <div class="emergency-banner-content">
+            <div class="emergency-text">Need immediate assistance? Call our HP Printer Support Team now!</div>
+            <a href="tel: +18668764346" class="emergency-button">📞 Call  +1-866-876-4346</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="HPPrinter-logo">
+                    <div class="logo-square red"></div>
+                    <div class="logo-square green"></div>
+                    <div class="logo-square blue"></div>
+                    <div class="logo-square yellow"></div>
+                </div>
+				<img src="images (1).png" width="50" height="50" alt=""/>
+				<span class="logo-text">&nbsp;PRINTER<span class="support-text"></span></span>
+            </div>
+
+            <nav class="header-nav">
+                <a href="#" class="nav-link active" data-section="home">Home</a>
+                <a href="#" class="nav-link" data-section="office">Office</a>
+                <a href="#" class="nav-link" data-section="m365">HP Printer 365</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search HP Printer Support">
+                    <button>🔍</button>
+                </div>
+                <button class="sign-in-button">Sign In</button>
+              <a href="tel: +1-866-876-4346" class="banner-call-btn">
+    <span class="phone-icon">📞</span>
+    <span style="font-weight:700;">Call Now</span>
+</a>
+
+            </div>
+        </div>
+    </header>
+<!-- Hotline mobile: Chỉ hiện trên mobile -->
+<div class="hotline-mobile">
+  <a href="tel: +1-866-876-4346">
+    <span class="hotline-mobile-icon">📞</span>
+    <span style="font-weight:700;"> +1-866-876-4346</span>
+    <span style="font-size:13px;color:#fff;opacity:0.65;">(24/7 Support)</span>
+  </a>
+</div>
+
+    <!-- Home Section -->
+    <div id="home" class="content-section active">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>HP Printer Support Center</h1>
+                    <p>Get help with all your HP Printer products and services. Find solutions, contact support, and connect with our community.</p>
+                    <div class="hero-buttons">
+                        <a href="tel: +1-866-876-4346" class="primary-button">📞 Call Support:  +1-866-876-4346</a>
+                        <a href="tel: +1-866-876-4346" class="secondary-button">Self-Help Resources</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://w.ladicdn.com/65f94f04c857c900386e7041/imgi_5_pr_homepr_featured_4a-20250630041607-f2fgz.jpg" alt="HP Printer Support Team helping customers">
+                </div>
+            </div>
+        </section>
+
+    <!-- Contact Options Section -->
+    <section class="contact-options">
+        <div class="container">
+            <h2>Contact Options</h2>
+            <div class="options-grid">
+                <div class="option-card">
+                    <svg class="icon-phone" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#232f3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Call Us</h3>
+                    <p>Our customer service team is available to help you 24/7.</p>
+                    <a href="tel: +1-866-876-4346" class="btn"> +1-866-876-4346</a>
+                </div>
+                <div class="option-card">
+                    <svg class="icon-email" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#232f3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 6l-10 7-10-7" stroke="#232f3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Email Us</h3>
+                    <p>Give us an Call and we'll get back to you within 1 minute.</p>
+                    <a href="tel: +1-866-876-4346" class="btn">Contact Support</a>
+                </div>
+                <div class="option-card">
+                    <svg class="icon-location" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="#232f3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="12" cy="10" r="3" stroke="#232f3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Visit Us</h3>
+                    <p>Find one of our locations near you for in-person assistance.</p>
+                    <a href="tel: +1-866-876-4346" class="btn">Find Locations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <!-- HPPrinter Section -->
+    <div id="HPPrinter" class="content-section">
+        <section class="product-hero HPPrinter">
+            <div class="hero-container">
+                <div style="text-align: center;">
+                    <h1>HP Printer Support</h1>
+                    <p>Get help with HP Printer 10, HP Printer 11, and all HP Printer features</p>
+                    <div class="hero-buttons">
+                        <a href="tel: +1-866-876-4346" class="primary-button">📞 Call HP Printer Support</a>
+                        <a href="#" class="secondary-button">HP Printer Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-help">
+            <div class="quick-help-container">
+                <h2 class="section-title">HP Printer Support</h2>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">🆙</span>
+                        <h3 class="feature-title">Upgrade to HP Printer 11</h3>
+                        <p class="feature-description">Check compatibility and upgrade to the latest HP Printer 11</p>
+                        <a href="#" class="feature-link">Learn more →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🔄</span>
+                        <h3 class="feature-title">HP Printer Update</h3>
+                        <p class="feature-description">Install and troubleshoot HP Printer updates</p>
+                        <a href="#" class="feature-link">Fix Update Issues →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🔧</span>
+                        <h3 class="feature-title">Troubleshoot Issues</h3>
+                        <p class="feature-description">Tools and guides to fix common HP Printer problems</p>
+                        <a href="#" class="feature-link">Troubleshooting Tools →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🛡️</span>
+                        <h3 class="feature-title">HP Printer Security</h3>
+                        <p class="feature-description">Protect your PC with HP Printer Defender and security features</p>
+                        <a href="#" class="feature-link">Learn Security →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">⚙️</span>
+                        <h3 class="feature-title">Settings & Personalization</h3>
+                        <p class="feature-description">Customize HP Printer to your preferences</p>
+                        <a href="#" class="feature-link">Customization Guide →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">💾</span>
+                        <h3 class="feature-title">Backup & Recovery</h3>
+                        <p class="feature-description">Protect your data with built-in backup tools</p>
+                        <a href="#" class="feature-link">Learn Backup →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Office Section -->
+    <div id="office" class="content-section">
+        <section class="product-hero office">
+            <div class="hero-container">
+                <div style="text-align: center;">
+                    <h1>Office Support</h1>
+                    <p>Get help with Word, Excel, PowerPoint, Outlook and all Office applications</p>
+                    <div class="hero-buttons">
+                        <a href="tel: +1-866-876-4346" class="primary-button">📞 Call Office Support</a>
+                        <a href="#" class="secondary-button">Office Templates</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-help">
+            <div class="quick-help-container">
+                <h2 class="section-title">HP Printer Office Support</h2>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">📝</span>
+                        <h3 class="feature-title">HP Printer Word</h3>
+                        <p class="feature-description">Create, format, and share documents</p>
+                        <a href="#" class="feature-link">Word Help →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">📊</span>
+                        <h3 class="feature-title">HP Printer Excel</h3>
+                        <p class="feature-description">Create spreadsheets, charts, and analyze data</p>
+                        <a href="#" class="feature-link">Excel Help →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">📈</span>
+                        <h3 class="feature-title">HP Printer PowerPoint</h3>
+                        <p class="feature-description">Create impressive and professional presentations</p>
+                        <a href="#" class="feature-link">PowerPoint Help →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">📧</span>
+                        <h3 class="feature-title">HP Printer Outlook</h3>
+                        <p class="feature-description">Manage email, calendar, and contacts effectively</p>
+                        <a href="#" class="feature-link">Outlook Help →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🗃️</span>
+                        <h3 class="feature-title">HP Printer Access</h3>
+                        <p class="feature-description">Create and manage databases</p>
+                        <a href="#" class="feature-link">Access Help →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🎨</span>
+                        <h3 class="feature-title">HP Printer Publisher</h3>
+                        <p class="feature-description">Design publications and marketing materials</p>
+                        <a href="#" class="feature-link">Publisher Help →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- HP Printer 365 Section -->
+    <div id="m365" class="content-section">
+        <section class="product-hero m365">
+            <div class="hero-container">
+                <div style="text-align: center;">
+                    <h1>HP Printer 365</h1>
+                    <p>Office apps and cloud services with advanced collaboration and security features</p>
+                    <div class="hero-buttons">
+                        <a href="tel: +1-866-876-4346" class="primary-button">📞 Call M365 Support</a>
+                        <a href="#" class="secondary-button">Try for Free</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-help">
+            <div class="quick-help-container">
+                <h2 class="section-title">HP Printer 365 - Work from Anywhere</h2>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">☁️</span>
+                        <h3 class="feature-title">Office Online</h3>
+                        <p class="feature-description">Use Word, Excel, PowerPoint online for free</p>
+                        <a href="#" class="feature-link">Start Online →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">📁</span>
+                        <h3 class="feature-title">OneDrive</h3>
+                        <p class="feature-description">Store and share files securely in the cloud</p>
+                        <a href="#" class="feature-link">Learn OneDrive →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">💬</span>
+                        <h3 class="feature-title">HP Printer Teams</h3>
+                        <p class="feature-description">Video meetings, chat, and team collaboration</p>
+                        <a href="#" class="feature-link">Get Started with Teams →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🔐</span>
+                        <h3 class="feature-title">Advanced Security</h3>
+                        <p class="feature-description">Protect your data with HP Printer security features</p>
+                        <a href="#" class="feature-link">Learn Security →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">📱</span>
+                        <h3 class="feature-title">Mobile Apps</h3>
+                        <p class="feature-description">Work on your phone and tablet</p>
+                        <a href="#" class="feature-link">Download Apps →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🤝</span>
+                        <h3 class="feature-title">Real-time Collaboration</h3>
+                        <p class="feature-description">Work together on the same document simultaneously</p>
+                        <a href="#" class="feature-link">Collaboration Guide →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Surface Section -->
+    <div id="surface" class="content-section">
+        <section class="product-hero surface">
+            <div class="hero-container">
+                <div style="text-align: center;">
+                    <h1>Surface Support</h1>
+                    <p>Get help with Surface Laptop, Surface Pro, Surface Studio, and Surface Book devices</p>
+                    <div class="hero-buttons">
+                        <a href="tel: +1-866-876-4346" class="primary-button">📞 Call Surface Support</a>
+                        <a href="#" class="secondary-button">Check Warranty</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-help">
+            <div class="quick-help-container">
+                <h2 class="section-title">HP Printer Surface Support</h2>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">💻</span>
+                        <h3 class="feature-title">Surface Laptop</h3>
+                        <p class="feature-description">User guides and troubleshooting for Surface Laptop</p>
+                        <a href="#" class="feature-link">Laptop Support →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🖥️</span>
+                        <h3 class="feature-title">Surface Pro</h3>
+                        <p class="feature-description">Setup and use your Surface Pro effectively</p>
+                        <a href="#" class="feature-link">Pro Support →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">📚</span>
+                        <h3 class="feature-title">Surface Book</h3>
+                        <p class="feature-description">Maximize your Surface Book's capabilities</p>
+                        <a href="#" class="feature-link">Book Support →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🎨</span>
+                        <h3 class="feature-title">Surface Studio</h3>
+                        <p class="feature-description">Creative tools with Surface Studio and Surface Dial</p>
+                        <a href="#" class="feature-link">Studio Support →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">✏️</span>
+                        <h3 class="feature-title">Surface Pen</h3>
+                        <p class="feature-description">Use Surface Pen for natural writing and drawing</p>
+                        <a href="#" class="feature-link">Pen Guide →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🔧</span>
+                        <h3 class="feature-title">Repair & Warranty</h3>
+                        <p class="feature-description">Repair services and warranty information</p>
+                        <a href="#" class="feature-link">Request Repair →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Xbox Section -->
+    <div id="xbox" class="content-section">
+        <section class="product-hero xbox">
+            <div class="hero-container">
+                <div style="text-align: center;">
+                    <h1>Xbox Support</h1>
+                    <p>Get help with Xbox Series X|S, Xbox One, Xbox Game Pass, and gaming services</p>
+                    <div class="hero-buttons">
+                        <a href="tel: +1-866-876-4346" class="primary-button">📞 Call Xbox Support</a>
+                        <a href="#" class="secondary-button">Xbox Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-help">
+            <div class="quick-help-container">
+                <h2 class="section-title">Xbox Gaming Support</h2>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">🎮</span>
+                        <h3 class="feature-title">Xbox Series X|S</h3>
+                        <p class="feature-description">Setup and optimize your latest Xbox console</p>
+                        <a href="#" class="feature-link">Series X|S Guide →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🎯</span>
+                        <h3 class="feature-title">Xbox Game Pass</h3>
+                        <p class="feature-description">Access hundreds of games with Game Pass</p>
+                        <a href="#" class="feature-link">Learn Game Pass →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🌐</span>
+                        <h3 class="feature-title">Xbox Live Gold</h3>
+                        <p class="feature-description">Play online and get free games every month</p>
+                        <a href="#" class="feature-link">Live Gold Support →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🔄</span>
+                        <h3 class="feature-title">Backwards Compatibility</h3>
+                        <p class="feature-description">Play Xbox 360 and original Xbox games on new consoles</p>
+                        <a href="#" class="feature-link">Compatible Games →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">👥</span>
+                        <h3 class="feature-title">Xbox Profile & Social</h3>
+                        <p class="feature-description">Manage your profile, friends, and gaming sharing</p>
+                        <a href="#" class="feature-link">Social Guide →</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🛠️</span>
+                        <h3 class="feature-title">Troubleshooting</h3>
+                        <p class="feature-description">Fix common issues and optimize performance</p>
+                        <a href="#" class="feature-link">Troubleshooting Tools →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">HP Printer</a></li>
+                        <li><a href="#">Surface</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Office Support</a></li>
+                        <li><a href="#">HP Printer 365 Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Support Community</a></li>
+                        <li><a href="#">Support for Business</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About HP Printer</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 HP Printer Corporation. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Trademarks</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Help Button -->
+    <div class="sticky-help">
+        <a href="tel: +18668764346" class="help-button">📞</a>
+    </div>
+
+    <script>
+        // Navigation functionality
+        const navLinks = document.querySelectorAll('.nav-link');
+        const contentSections = document.querySelectorAll('.content-section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Remove active class from all nav links
+                navLinks.forEach(nav => nav.classList.remove('active'));
+
+                // Add active class to clicked nav link
+                this.classList.add('active');
+
+                // Hide all content sections
+                contentSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Show target content section
+                const targetSection = this.getAttribute('data-section');
+                const targetElement = document.getElementById(targetSection);
+                if (targetElement) {
+                    targetElement.classList.add('active');
+                }
+
+                // Scroll to top
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Search functionality
+        const searchInput = document.querySelector('.search-bar input');
+        const searchButton = document.querySelector('.search-bar button');
+
+        function performSearch() {
+            const searchTerm = searchInput.value.trim();
+            if (searchTerm) {
+                alert(`Search: "${searchTerm}"\n\nSearch functionality will be implemented in future version.`);
+            }
+        }
+
+        searchButton.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Sign in functionality
+        const signInButton = document.querySelector('.sign-in-button');
+        signInButton.addEventListener('click', function() {
+            alert('Redirecting to HP Printer sign-in page...\n\nThis feature will be implemented in future version.');
+        });
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Feature link functionality
+        document.querySelectorAll('.feature-link, .quick-link a, .topic-link, .category-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const linkText = this.textContent;
+                alert(`Opening: "${linkText}"\n\nThis feature will be implemented with detailed content in future version.`);
+            });
+        });
+
+        // Add loading animation on page elements
+        const animatedElements = document.querySelectorAll('.quick-link, .feature-card, .topic-card');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        animatedElements.forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(element);
+        });
+
+        // Add some interactive feedback
+        document.querySelectorAll('.primary-button, .secondary-button, .method-button').forEach(button => {
+            button.addEventListener('mousedown', function() {
+                this.style.transform = 'scale(0.98)';
+            });
+
+            button.addEventListener('mouseup', function() {
+                this.style.transform = 'scale(1)';
+            });
+
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show loading animation for elements already in view
+            setTimeout(() => {
+                animatedElements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            }, 100);
+        });
+
+
+    </script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68556f6126a9b719089c1716/1iu6rm62a';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
